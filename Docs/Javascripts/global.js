@@ -68,3 +68,14 @@ const Subscribe = document.getElementById("Subscribe");
 Subscribe.addEventListener('click',()=>{
     location.reload()
 })
+
+const responsive_navbar = document.getElementById("responsive_navbar");
+const closeNav = document.getElementById("closeNav");
+const openNav = document.getElementById("openNav");
+
+openNav.addEventListener('click',()=>{
+    responsive_navbar.style.width = "100%"
+})
+closeNav.addEventListener('click',()=>{
+    responsive_navbar.style.width = "0%"
+})
