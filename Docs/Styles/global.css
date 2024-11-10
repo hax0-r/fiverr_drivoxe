@@ -62,13 +62,14 @@ a {
     right: 2rem;
     display: none;
     bottom: 3rem;
-    padding: 1rem 1.1rem;
+    padding: 1rem 1.15rem;
     border: 2px solid var(--red-color);
     cursor: pointer;
     border-radius: 10rem;
     font-weight: 700;
     transition: 300ms all;
     background-color: var(--red-color);
+    z-index: 99;
 
     i {
         color: var(--white-color);
@@ -101,6 +102,7 @@ nav {
     justify-content: space-between;
     margin: 0 auto;
     height: 70px;
+    padding: 1rem;
     position: relative;
 
     img {
@@ -519,12 +521,13 @@ nav {
     margin: 0 auto;
     max-width: 1340px;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 4rem;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 1rem;
 
     img {
         width: 100%;
@@ -560,4 +563,76 @@ nav {
             }
         }
     }
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: start;
+    max-width: 80rem;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    gap: 2rem;
+    .first{
+        max-width: 40%;
+        width: 100%;
+        h2{
+            font-size: 50px;
+            font-weight: 700;
+        }
+        p{
+            font-weight: 500;
+            font-size: 17px;
+            color: var(--gray-color);
+            padding: 1rem 0;
+        }
+        input{
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            width: 100%;
+            border: 2px solid var(--gray-color);
+            border-radius: 10rem;
+        }
+        h3{
+            text-align: right;
+            padding-top: .5rem;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+    .second{
+        max-width: 17%;
+        text-align: center;
+        width: 100%;
+        h2{
+            font-size: 22px;
+            padding-bottom: 1.5rem;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .8rem;
+            flex-direction: column;
+            li{
+                a{
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyRight{
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
