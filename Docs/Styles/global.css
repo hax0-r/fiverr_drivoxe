@@ -415,6 +415,12 @@ nav {
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 800px) {
+    .allLoges {
+        margin-bottom: 3rem;
+    }
+}
+
 /* the cars */
 
 .theCars {
@@ -519,6 +525,12 @@ nav {
             margin-top: 2rem;
             gap: 1.3rem;
         }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .theCars {
+        margin-top: 4rem;
     }
 }
 
@@ -910,4 +922,389 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-bottom: 1rem;
+}
+
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* others pages */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+
+
+/* shop page */
+
+.shopSection {
+    margin-top: 3rem;
+
+    p {
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 56px;
+        font-weight: 700;
+        padding-top: .3rem;
+    }
+
+    img {
+        margin-top: 1.5rem;
+        height: 400px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 800px) {
+        p {
+            font-size: unset;
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+    }
+}
+
+.explore {
+    margin: 0 auto;
+    max-width: 1340px;
+    width: 100%;
+    margin-top: 4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    height: 399.1px;
+
+    img {
+        height: 399.1px;
+        width: 100%;
+        border-radius: 1rem;
+        object-fit: cover;
+        filter: brightness(.4);
+    }
+
+    .content {
+        position: absolute;
+        right: 5rem;
+        max-width: 800px;
+        width: 100%;
+
+        h2 {
+            font-size: 50px;
+            font-weight: 700;
+            color: var(--white-color);
+            padding: 1rem 0;
+        }
+
+        p {
+            color: var(--white-color);
+            font-size: 20px;
+        }
+
+        button {
+            padding: .8rem 1.7rem;
+            border: 2px solid var(--red-color);
+            cursor: pointer;
+            border-radius: 10rem;
+            background-color: var(--red-color);
+            color: var(--white-color);
+            font-weight: 700;
+            transition: 300ms all;
+
+            &:hover {
+                background-color: transparent;
+                color: var(--red-color);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .explore {
+        margin-top: 2rem;
+
+        .content {
+            left: 2rem;
+
+            h2 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .explore {
+        .content {
+            max-width: 320px;
+
+            p {
+                max-width: 300px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* --======================================================= */
+/* --======================================================= */
+/* --======================================================= */
+
+/* about */
+
+.reverse {
+    margin: 0 auto;
+    max-width: 1340px;
+    width: 100%;
+    margin-top: 4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    height: 399.1px;
+
+    img {
+        height: 399.1px;
+        width: 100%;
+        border-radius: 1rem;
+        object-fit: cover;
+        filter: brightness(.4);
+    }
+
+    .content {
+        position: absolute;
+        left: 5rem;
+        max-width: 800px;
+        width: 100%;
+
+        h2 {
+            font-size: 50px;
+            font-weight: 700;
+            color: var(--white-color);
+            padding: 1rem 0;
+        }
+
+        p {
+            color: var(--white-color);
+            font-size: 20px;
+        }
+
+        button {
+            padding: .8rem 1.7rem;
+            border: 2px solid var(--red-color);
+            cursor: pointer;
+            border-radius: 10rem;
+            background-color: var(--red-color);
+            color: var(--white-color);
+            font-weight: 700;
+            transition: 300ms all;
+
+            &:hover {
+                background-color: transparent;
+                color: var(--red-color);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .reverse {
+        margin-top: 2rem;
+
+        .content {
+            left: 2rem;
+
+            h2 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .reverse {
+        .content {
+            max-width: 320px;
+
+            p {
+                max-width: 300px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.pickCar {
+    display: flex;
+    max-width: 80rem;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    align-items: center;
+    gap: 1rem;
+
+    button {
+        padding: 1rem 1.1rem;
+        border: 2px solid var(--red-color);
+        cursor: pointer;
+        border-radius: 10rem;
+        background-color: var(--red-color);
+        color: var(--white-color);
+        font-weight: 700;
+        transition: 300ms all;
+
+        i {
+            color: var(--white-color);
+            font-size: 1.2rem;
+        }
+
+        &:hover {
+            i {
+                color: var(--red-color);
+            }
+
+            background-color: transparent;
+            color: var(--red-color);
+        }
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+.redCar {
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    position: relative;
+
+    img {
+        width: 80%;
+    }
+
+    .content {
+        max-width: 400px;
+        width: 100%;
+        position: absolute;
+        padding: 3rem 1.5rem;
+        right: 1rem;
+        top: 0rem;
+        background-color: var(--white-color);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+        h3 {
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 1;
+            padding: 1rem 0 1.5rem 0;
+        }
+
+        p {
+            color: var(--gray-color);
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .content {
+            position: unset;
+            max-width: unset;
+            box-shadow: rgba(100, 100, 111, 0) 0px 7px 29px 0px;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .content {
+            padding: 0 .7rem;
+            padding-top: 1rem;
+            h2 {
+                font-size: 35px;
+                padding: 1rem 0 1rem 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .redCar {
+        margin-top: 0;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.whyChoose{
+    margin-top: 4rem;
+    h2{
+        font-size: 56px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .cards{
+        max-width: 1360px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        .card{
+            background-color: #F8F8F8;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            max-width: 656px;
+            width: 100%;
+            border: 2px solid #F8F8F8;
+            transition: 400ms all;
+
+            .head{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+            p{
+                margin-top: 2rem;
+                color: var(--gray-color);
+            }
+            &:hover{
+                background-color: transparent;
+                border: 2px solid var(--red-color);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .whyChoose{
+        margin-top: 3rem;
+        h2{
+            font-size: 35px;
+        }
+        .cards{
+            margin-top: 1.5rem;
+        }
+    }
 }
