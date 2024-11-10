@@ -312,10 +312,11 @@ nav {
         }
     }
 
-    .mid{
-        img{
+    .mid {
+        img {
             width: 100%;
             padding: 0 5.5rem;
+            animation: float 4s ease-in-out infinite;
         }
     }
 
@@ -380,16 +381,38 @@ nav {
     }
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-16px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 @media only screen and (max-width: 900px) {
     .mainSection {
         min-height: unset;
+        flex-direction: column;
+        .mid{
+            margin-top: 3rem;
+            img{
+                max-width: 100%;
+            }
+        }
     }
 }
 
 
 @media only screen and (max-width: 800px) {
     .mainSection {
-        margin-top: 8rem;
+        margin-top: 2.5rem;
     }
 }
 
@@ -422,6 +445,7 @@ nav {
 /* the cars */
 
 .theCars {
+    padding: 1rem;
     margin-top: 7rem;
 
     p {
@@ -516,6 +540,11 @@ nav {
                         color: var(--red-color);
                     }
                 }
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .car{
+            max-width: 100%;
             }
         }
     }
@@ -1233,6 +1262,7 @@ footer {
         .content {
             padding: 0 .7rem;
             padding-top: 1rem;
+
             h2 {
                 font-size: 35px;
                 padding: 1rem 0 1rem 0;
@@ -1244,20 +1274,23 @@ footer {
 @media only screen and (max-width: 900px) {
     .redCar {
         margin-top: 0;
+
         img {
             width: 100%;
         }
     }
 }
 
-.whyChoose{
+.whyChoose {
     margin-top: 4rem;
-    h2{
+
+    h2 {
         font-size: 56px;
         font-weight: 700;
         text-align: center;
     }
-    .cards{
+
+    .cards {
         max-width: 1360px;
         width: 100%;
         margin: 0 auto;
@@ -1268,7 +1301,8 @@ footer {
         align-items: center;
         gap: 1rem;
         padding: 1rem;
-        .card{
+
+        .card {
             background-color: #F8F8F8;
             padding: 1.5rem;
             border-radius: 1rem;
@@ -1277,16 +1311,18 @@ footer {
             border: 2px solid #F8F8F8;
             transition: 400ms all;
 
-            .head{
+            .head {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
             }
-            p{
+
+            p {
                 margin-top: 2rem;
                 color: var(--gray-color);
             }
-            &:hover{
+
+            &:hover {
                 background-color: transparent;
                 border: 2px solid var(--red-color);
             }
@@ -1295,12 +1331,14 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-    .whyChoose{
+    .whyChoose {
         margin-top: 3rem;
-        h2{
+
+        h2 {
             font-size: 35px;
         }
-        .cards{
+
+        .cards {
             margin-top: 1.5rem;
         }
     }
