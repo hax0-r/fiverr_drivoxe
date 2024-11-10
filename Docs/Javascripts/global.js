@@ -62,3 +62,9 @@ window.onscroll = function () {
 toptoScroll.onclick = function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
+
+const Subscribe = document.getElementById("Subscribe");
+
+Subscribe.addEventListener('click',()=>{
+    location.reload()
+})
