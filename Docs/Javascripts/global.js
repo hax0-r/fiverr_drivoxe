@@ -65,7 +65,7 @@ toptoScroll.onclick = function () {
 
 const Subscribe = document.getElementById("Subscribe");
 
-Subscribe.addEventListener('click',()=>{
+Subscribe.addEventListener('click', () => {
     location.reload()
 })
 
@@ -73,9 +73,18 @@ const responsive_navbar = document.getElementById("responsive_navbar");
 const closeNav = document.getElementById("closeNav");
 const openNav = document.getElementById("openNav");
 
-openNav.addEventListener('click',()=>{
+openNav.addEventListener('click', () => {
     responsive_navbar.style.width = "100%"
 })
-closeNav.addEventListener('click',()=>{
+closeNav.addEventListener('click', () => {
     responsive_navbar.style.width = "0%"
 })
+
+setTimeout(() => {
+    const loaderDiv = document.querySelector('.LoaderDiv2');
+    loaderDiv.style.opacity = '0';
+
+    setTimeout(() => {
+        loaderDiv.style.display = 'none';
+    }, 500);
+}, 1000); 
