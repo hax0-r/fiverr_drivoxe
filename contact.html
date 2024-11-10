@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIVOXE.</title>
+    <link rel="shortcut icon" href="/Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+</head>
+
+<body>
+
+    <!-- components -->
+    <button id="toptoScroll" class="fadeIn"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- components -->
+
+    <nav>
+        <a href="./index.html">
+            <img src="./Docs/Images/logo.svg" alt="">
+        </a>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html" id="activeLink">About</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./index.html#theCars">Gallery</a></li>
+        </ul>
+        <div class="btns">
+            <a href="./contact.html">Contact</a>
+            <p>|</p>
+            <a href="#Subscribe">
+                <button>Subscribe</button>
+            </a>
+        </div>
+        <i class="fa-solid fa-bars" id="openNav"></i>
+    </nav>
+
+    <div class="responsive_navbar" id="responsive_navbar">
+        <div class="content">
+            <i class="fa-solid fa-x" id="closeNav"></i>
+            <a href="./index.html">
+                <img src="./Docs/Images/logo.svg" alt="">
+            </a>
+            <ul>
+                <li><a href="./index.html" id="activeLink">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main section -->
+
+    <div class="shopSection">
+        <p>Home/Contact us</p>
+        <h2>Who We are</h2>
+        <img src="./Docs/Images/tent.jpg" style="filter: brightness(.5);" alt="">
+    </div>
+
+    <!-- form -->
+
+    <div class="contact" id="choose">
+        <div class="right">
+            <img src="./Docs/Images/snowman.png" alt="">
+        </div>
+        <div class="left">
+            <form action="">
+                <input type="text" required placeholder="Enter Name">
+                <input type="email" required placeholder="Enter E-Mail">
+                <input type="number" required placeholder="Enter Number">
+                <textarea name="" rows="9" placeholder="Message..."></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Ready to Go? -->
+
+    <div class="reverse" id="ready">
+        <img src="./Docs/Images/readAbout.jpg" alt="">
+        <div class="content">
+            <p>Send us a Message</p>
+            <h2>Unleash your next great adventure—join now to start the journey!</h2>
+            <button >Join the Journey</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer id="Subscribe">
+        <div class="first">
+            <h2>Don’t Miss a Thing</h2>
+            <p>Subscribe to our newsletter for exclusive deals and updates.</p>
+            <form action="">
+                <input type="text" placeholder="Enter email address for newsletter ... ">
+                <h3 id="Subscribe">Subscribe</h3>
+            </form>
+        </div>
+        <div class="second">
+            <h2>Quick Link</h2>
+            <ul>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="second">
+            <h2>The Cars</h2>
+            <ul>
+                <li><a href="./index.html#choose">Features</a></li>
+                <li><a href="./index.html#theCars">Pick a Ride</a></li>
+                <li><a href="#ready">Ready For Trip</a></li>
+            </ul>
+        </div>
+        <div class="second">
+            <h2>Social Media</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="https://www.twitter.com/">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <p class="copyRight">
+        Copyright © 2024 SportClub. All rights reserved.
+    </p>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+</body>
+
+</html>
